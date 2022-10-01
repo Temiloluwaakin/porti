@@ -1,0 +1,49 @@
+.layout{
+    width: 100%;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    
+}
+
+.navlinks a{
+    color: black;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: 1000;
+}
+
+.navlinks a:hover{
+    color: #e64d35;
+}
+
+.navlinks a.active{
+    color: #e64d35;
+}
+
+.bttn{
+    padding: 5px 10px;
+    background: none;
+}
+.bttn:hover{
+    color: #e64d35;
+    background: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pagess{
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 660px) {
+    .navlinks{
+        display: none;
+    }
+}

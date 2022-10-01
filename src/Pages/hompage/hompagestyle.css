@@ -1,0 +1,67 @@
+.homepage{
+    width: 100%;
+    position: relative;
+    
+}
+
+.fll{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fll h2{
+    padding-top: 30px;
+    width: 34%;
+    font-size: 40px;
+}
+
+.iii{
+    width: 350px;
+    height: 350px;
+}
+
+
+.linkkk{
+    display: flex;
+    height: 60px;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    transform: skewY(178deg);   
+}
+
+.linkkk a{
+    color: white;
+    text-decoration: none;
+}
+.linkkk a:hover{
+    color: #e64d35;
+    font-size: 16.5px;
+    transition: 0.5s;
+}
+
+.iconn{
+    color: red;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 420px) {
+    .homepage{
+        overflow: hidden;
+    }
+    .fll{
+        flex-wrap: wrap;
+    }
+    .fll h2{
+        margin: 0 auto;
+        width: 90%;
+        font-size: 35px;
+    }
+    .linkkk{
+        height: 100px;
+        flex-wrap: wrap;
+    }
+}
