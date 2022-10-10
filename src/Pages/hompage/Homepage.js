@@ -10,7 +10,7 @@ const Homepage = () => {
         <div className="homepage">
 
             <div className="fll">
-                <h2>HI, I'M TEMILOLUWA. A FRONT-END WEB DEVELOPER BASED IN NIGERIA
+                <h2 id="txtt">HI, I'M TEMILOLUWA. A FRONT-END WEB DEVELOPER BASED IN NIGERIA
                     <Link to='/contact' className="but">Let's Talk</Link>
                 </h2>
                 <img src={myyy} alt="imag" className="iii"/>

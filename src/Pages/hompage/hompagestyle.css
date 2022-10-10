@@ -9,12 +9,30 @@
     justify-content: space-around;
 }
 
-.fll h2{
+#txtt{
     padding-top: 30px;
     width: 34%;
     font-size: 40px;
-    
+
+    color: transparent;
+    background: conic-gradient(
+        #706aad 20%,
+        #baabda 20%, #baabda 33%,
+        #768851 33%, #e7fbbe 53%,
+        #e64d35 53%, #e64d35 70%,
+        #3b6588 70%, #b5deff 90%,
+        #f7d1ba
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: reverse-expand 0.5s ease backwards;
 }
+#txtt:hover{
+    animation: expand 0.5s ease forwards;
+}
+
+
 .but{
     display: block;
     margin-top: 30px;
@@ -178,6 +196,34 @@
     }
     100%{
         transform: translateY(0px);
+    }
+}
+@keyframes expand {
+    0%{
+        background-size: 50%;
+        background-position: 0 0;
+    }
+    50%{
+        background-size: 100%;
+        background-position: 0 1em;
+    }
+    100%{
+        background-size: 300%;
+        background-position: -10 -4em;
+    }
+}
+@keyframes reverse-expand {
+    0%{
+        background-size: 300%;
+        background-position: -10 -4em;
+    }
+    50%{
+        background-size: 100%;
+        background-position: 0 1em;
+    }
+    100%{
+        background-size: 50%;
+        background-position: 0 0;
     }
 }
 
