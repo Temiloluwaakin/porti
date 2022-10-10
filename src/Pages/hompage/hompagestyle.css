@@ -248,7 +248,7 @@
     .fll{
         flex-wrap: wrap;
     }
-    .fll h2{
+    #txtt{
         margin: 0 auto;
         width: 90%;
         font-size: 35px;
