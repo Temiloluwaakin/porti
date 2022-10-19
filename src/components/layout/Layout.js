@@ -28,8 +28,8 @@ const Layout = ({children}) => {
                         <span style={ { fontSize: "20px", paddingBottom: "0px", marginLeft: "20px" } }><span className="drpd">menu</span></span>
                         <div ref={dropdowncaret} className="target-div thedropdown" style={{ display: "none"}}>
                             <NavLink to="/" className='nav-link'> Home </NavLink>
-                            <NavLink to="/pricing" className='nav-link'> About </NavLink>
-                            <NavLink to="/" className='nav-link'> Projects </NavLink>
+                            <NavLink to="/about" className='nav-link'> About </NavLink>
+                            <NavLink to="/projects" className='nav-link'> Projects </NavLink>
                             <NavLink to="/contact" className='nav-link'> Contacts </NavLink>
                         </div>
                     </div>
@@ -37,6 +37,12 @@ const Layout = ({children}) => {
             </div>
             <div className="pagess">
                 {children}
+            </div>
+            <div className="footer">
+                <p onClick={ () => window.location = 'mailto:akinboade12345@gmail.com'}>
+                    Email
+                </p>
+                <p>Linkedin</p>
             </div>
         </div>
     );

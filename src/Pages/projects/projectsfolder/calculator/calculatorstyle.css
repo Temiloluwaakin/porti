@@ -1,0 +1,111 @@
+.calculator{
+    height: 100vh;
+}
+
+.calculatorr{
+    background: #fff;
+    max-width: 400px;
+    margin: 30px auto;
+    border: 2px solid black;
+    box-shadow: 2px 10px 20px rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+.display{
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(245, 239, 239);
+    height: 50px;
+    box-shadow: 3px 5px 15px #4d4c4c inset;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: right;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+.display span{
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: rgb(163, 162, 162);
+}
+
+.operators{
+    width: 80%;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttn{
+    background: none;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 60px;
+    width: 50px;
+    border-radius: 10px;
+}
+.buttn2{
+    
+    background: none;
+    font-size: 20px;
+    width: 20%;
+    border: 2px solid black;
+    height: 60px;
+    border-radius: 10px;
+}
+.buttn23{
+    width: 67%;
+    background: none;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 60px;
+    border-radius: 10px;
+}
+.digbtn{
+    background: none;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 60px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: rgb(240, 238, 238);
+}
+
+.digits{
+    display: flex;
+    width: 80%;
+    row-gap: 15px;
+    column-gap: 39px;
+    justify-content: right;
+    margin: 0px auto 20px auto;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 420px) {
+    .calculatorr{
+        width: 90%;
+    }
+    .digbtn{
+        width: 50px;
+        border-radius: 10px;
+    }
+    .digits{
+        column-gap: 28px;
+    }
+    .buttn{
+        width: 50px;
+    }
+    .buttn23{
+        width: 70%;
+    }
+}
